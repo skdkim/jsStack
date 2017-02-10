@@ -31,9 +31,11 @@ class Stack{
   }
 }
 
-let stack = new Stack();
+module.exports = Stack;
 
-console.log(stack.isEmpty());
+// let stack = new Stack();
+//
+// console.log(stack.isEmpty());
 
 //
 // // console.log(stack.peek());
