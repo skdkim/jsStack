@@ -35,19 +35,3 @@ class Stack{
 }
 
 module.exports = Stack;
-
-// let stack = new Stack();
-//
-// console.log(stack.isEmpty());
-
-//
-// // console.log(stack.peek());
-// stack.push(1);
-// stack.push(5);
-// stack.push(3);
-// stack.push(7);
-//
-// // console.log(stack.peek());
-//
-// stack.pop();
-// console.log(stack.peek());

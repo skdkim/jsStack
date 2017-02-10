@@ -25,8 +25,11 @@ describe('#peek()', () => {
 
   it('should return the top element of the stack', () => {
     stack.push(1);
+
     assert.equal(stack.peek(), 1);
+
     stack.push(2);
+
     assert.equal(stack.peek(), 2);
   });
 });
@@ -35,8 +38,11 @@ describe('#push()', () => {
   let stack = new Stack();
   it('should add argument to the top of the stack', () => {
     stack.push(15);
+
     assert.equal(stack.peek(), 15);
+
     stack.push(17);
+
     assert.equal(stack.peek(), 17);
   });
 });
@@ -52,8 +58,8 @@ describe('#pop()', () => {
   it('should remove top element and return the element', () => {
     stack.push(15);
     stack.push(17);
+
     assert.equal(stack.pop(), 17);
     assert.equal(stack.peek(), 15);
-
   });
 });
