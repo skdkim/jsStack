@@ -20,7 +20,7 @@ class Stack{
 
   peek(){
     if (this.top.value){
-      return this.top;
+      return this.top.value;
     } else {
       return "stack is empty";
     }
