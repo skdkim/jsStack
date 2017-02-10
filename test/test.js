@@ -1,13 +1,24 @@
-var assert = require('assert');
+let assert = require('assert');
 
-var Stack = require('../stack.js');
+let Stack = require('../stack.js');
 
-describe('#isEmpty()', function () {
-  it('should return true if the stack is empty', function () {
-    let stack = new Stack();
+describe('#isEmpty()', () => {
+  let stack = new Stack();
+  it('should return true if the stack is empty', () => {
+    assert.deepEqual(stack.isEmpty(), true);
+  });
 
-    let boolean = stack.isEmpty();
+  it('should return false if the stack is not empty', () => {
+    stack.push(1);
 
-    assert.deepEqual(boolean, true);
+    assert.deepEqual(stack.isEmpty(), false);
+  });
+});
+
+describe('#peek()', () => {
+  let stack = new Stack();
+  it('should return the top element of the stack', () => {
+    stack.push(1);
+    assert.deepEqual(stack.peek(), 1);
   });
 });
