@@ -22,7 +22,8 @@ class Stack{
     if (this.top.value){
       return this.top.value;
     } else {
-      return "stack is empty";
+      // return "sdf";
+      throw new Error("stack is empty");
     }
   }
 
