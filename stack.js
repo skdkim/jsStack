@@ -1,9 +1,4 @@
-class StackNode{
-  constructor(ele){
-    this.value = ele;
-    this.next = undefined;
-  }
-}
+const StackNode = require('./stackNode.js');
 
 class Stack{
   constructor(){
